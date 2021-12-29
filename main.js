@@ -32,13 +32,14 @@ function draw(){
 	stroke("#FF0000");
 
     if(scoreLeftWrist>0.2){
+fill("#FF0000");
 circle(leftwristX, leftwristY);
-song2.stop();
+song1.stop();
     }
 
     if(statusbar=false){
-song1.play();
-document.getElementById("song_name").innerHTML="Song 1 is playing";
+song2.play();
+document.getElementById("song_name").innerHTML="Song 2 is playing";
     }
 }
 
