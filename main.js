@@ -51,11 +51,11 @@ function gotPoses(){
     if(results.length > 0){
         console.log(results)
         leftwristX = results[0].pose.leftWrist.x;
-        leftwristY = results[0].pose.leftwrist.x;
+        leftwristY = results[0].pose.leftwrist.y;
 
         rightwristX = results[0].pose.rightWrist.x;
         rightwristY = results[0].pose.rightWrist.y;
 
-        results[0].pose.keypoints[9].score;
+        results[0].pose.keypoints[0].score;
     }
 }
