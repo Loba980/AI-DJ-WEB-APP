@@ -13,18 +13,16 @@ function preload(){
 }
 
 function setup(){
-    canvas= createCanvas(600,500);
-    canvas.center();
 
     video= createCapture(VIDEO);
-    video.hide();
+    video.size(500, 500)
+    video.place(700, 500)
 
     poseNet=ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
 }
 
 function draw(){
-    image(video, 0, 0, 600, 500);
 
     is_song_playing.isPlaying();
 
